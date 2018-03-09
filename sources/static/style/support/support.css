@@ -1,0 +1,63 @@
+.support_main_div {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+.support_main_div .support_content {
+  float: left;
+  width: 1080px;
+  border: solid 1px #dadada;
+  font-family: MicrosoftYaHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #323945;
+}
+.support_main_div .support_content .support_title {
+  font-size: 24px;
+  line-height: 30px;
+  height: 30px;
+  margin: 40px auto;
+}
+.support_main_div .support_content .support_subhead {
+  font-size: 20px;
+  line-height: 26px;
+  height: 26px;
+  margin: 20px auto;
+}
+.support_main_div .support_content .support_ins_return {
+  margin: 5px auto;
+  line-height: 30px;
+}
+.support_main_div .support_content p {
+  line-height: 24px;
+  margin: 10px 0;
+}
+.support_main_div .support_content a {
+  color: #297fff;
+}
+.support_main_div .support_content .support_table {
+  display: table;
+  width: 1000px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.support_main_div .support_content .support_table thead {
+  background: #eeeeee;
+}
+.support_main_div .support_content .support_table td,
+.support_main_div .support_content .support_table th {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 25px;
+  border: solid 1px #dadada;
+}
+.support_main_div .support_content .support_table td a,
+.support_main_div .support_content .support_table th a {
+  color: #323945;
+}
+.support_main_div .support_content .support_table td a:hover,
+.support_main_div .support_content .support_table th a:hover {
+  color: #297fff;
+}

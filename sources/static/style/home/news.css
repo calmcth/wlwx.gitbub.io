@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  font-family: MicrosoftYaHei-Bold;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.users {
+  width: 100%;
+  height: 1160px;
+  overflow: hidden;
+  margin-top: -200px;
+  background: url(/sources/static/image/home_user.png?t=1519632839011v1.0.0) no-repeat center center;
+}
+.users .wrap {
+  width: 1242px;
+  margin: 131px auto auto auto;
+  overflow: hidden;
+}
+.users .wrap .user {
+  overflow: hidden;
+}
+.users .wrap .user .wrap {
+  width: 1112px;
+}
+.users .wrap .user .wrap .title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+.users .wrap .user .wrap .logos {
+  margin-top: 90px;
+}
+.users .wrap .user .wrap .logos .item-1,
+.users .wrap .user .wrap .logos .item-2 {
+  height: 100px;
+}
+.users .wrap .user .wrap .logos .item-1 span,
+.users .wrap .user .wrap .logos .item-2 span {
+  display: inline-block;
+  box-shadow: 0px 4px 10px 0px rgba(11, 49, 107, 0.35);
+  border-radius: 4px;
+  position: relative;
+}
+.users .wrap .user .wrap .logos .item-1 .logo-1,
+.users .wrap .user .wrap .logos .item-2 .logo-1 {
+  width: 220px;
+  height: 87px;
+  padding: 2px;
+  left: 18px;
+  background: url(/sources/static/image/home/logo-1.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown1 1.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown1 1.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown1 {
+  from {
+    top: -30px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-2,
+.users .wrap .user .wrap .logos .item-2 .logo-2 {
+  width: 180px;
+  height: 70px;
+  padding: 3px;
+  left: 52px;
+  background: url(/sources/static/image/home/logo-2.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown2 2.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown2 2.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown2 {
+  from {
+    top: -40px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-3,
+.users .wrap .user .wrap .logos .item-2 .logo-3 {
+  width: 180px;
+  height: 70px;
+  padding: 3px;
+  left: 76px;
+  top: -35px;
+  background: url(/sources/static/image/home/logo-3.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown3 2s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown3 2s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown3 {
+  from {
+    top: -35px;
+  }
+  to {
+    top: -7px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-4,
+.users .wrap .user .wrap .logos .item-2 .logo-4 {
+  width: 143px;
+  height: 56px;
+  left: 102px;
+  background: url(/sources/static/image/home/logo-4.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown4 6s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown4 6s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown4 {
+  from {
+    top: -85px;
+  }
+  to {
+    top: -8px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-5,
+.users .wrap .user .wrap .logos .item-2 .logo-5 {
+  width: 178px;
+  height: 51px;
+  left: 165px;
+  background: url(/sources/static/image/home/logo-5.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown5 3.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown5 3.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown5 {
+  from {
+    top: -45px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-6,
+.users .wrap .user .wrap .logos .item-2 .logo-6 {
+  width: 156px;
+  height: 61px;
+  left: 50px;
+  background: url(/sources/static/image/home/logo-6.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown6 3.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown6 3.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown6 {
+  from {
+    top: -23px;
+  }
+  to {
+    top: 5px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-7,
+.users .wrap .user .wrap .logos .item-2 .logo-7 {
+  width: 180px;
+  height: 70px;
+  left: 72px;
+  top: -20px;
+  background: url(/sources/static/image/home/logo-7.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown7 1.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown7 1.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown7 {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 6px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-8,
+.users .wrap .user .wrap .logos .item-2 .logo-8 {
+  width: 140px;
+  height: 55px;
+  left: 108px;
+  top: -40px;
+  background: url(/sources/static/image/home/logo-8.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown8 1.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown8 1.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown8 {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-9,
+.users .wrap .user .wrap .logos .item-2 .logo-9 {
+  width: 222px;
+  height: 88px;
+  left: 147px;
+  background: url(/sources/static/image/home/logo-9.png?t=1519632839011v1.0.0) no-repeat center center;
+  animation: ghostUpdown9 3.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown9 3.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown9 {
+  from {
+    top: -20px;
+  }
+  to {
+    top: 2px;
+  }
+}
+.users .wrap .user .wrap .logos .item-1 .logo-10,
+.users .wrap .user .wrap .logos .item-2 .logo-10 {
+  width: 154px;
+  height: 63px;
+  left: 178px;
+  padding: 5px;
+  background: url(/sources/static/image/home/logo-10.png?t=1519632839011v1.0.0) no-repeat center center;
+  box-shadow: none;
+  animation: ghostUpdown10 1.5s ease-in-out infinite alternate;
+  -webkit-animation: ghostUpdown10 1.5s ease-in-out infinite alternate;
+}
+@keyframes ghostUpdown10 {
+  from {
+    top: -15px;
+  }
+  to {
+    top: 1px;
+  }
+}
+.users .wrap .honor {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.users .wrap .honor .cell {
+  width: 1112px;
+  margin: 0 auto;
+}
+.users .wrap .honor .cell .title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+.users .wrap .honor .cell .img {
+  margin: 0 auto;
+  width: 1142px;
+  height: 317px;
+  margin-left: -13px;
+  margin-top: 53px;
+  background: url(/sources/static/image/home/honor.png?t=1519632839011v1.0.0) no-repeat;
+}
+.news {
+  width: 100%;
+  height: 477px;
+  overflow: hidden;
+}
+.news .wrap {
+  width: 1030px;
+  margin: 0 auto;
+}
+.news .wrap .items {
+  width: 1030px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.news .wrap .items .item {
+  width: 420px;
+  height: 369px;
+  background-color: #ffffff;
+}
+.news .wrap .items .item:nth-child(1) {
+  margin-right: 186px;
+}
+.news .wrap .items .item .header {
+  height: 40px;
+}
+.news .wrap .items .item .header .className {
+  display: inline-block;
+  height: 100%;
+  line-height: 40px;
+  float: left;
+}
+.news .wrap .items .item .header .moreBtn {
+  display: inline-block;
+  width: 38px;
+  height: 25px;
+  float: right;
+  margin-top: 10px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  line-height: 25px;
+}
+.news .wrap .items .item .header .moreBtn a {
+  color: #686868;
+}
+.news .wrap .items .item .banner {
+  height: 114px;
+  position: relative;
+  overflow: hidden;
+}
+.news .wrap .items .item .banner img {
+  width: 100%;
+}
+.news .wrap .items .item .banner .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding-left: 12px;
+}
+.news .wrap .items .item .titles {
+  margin-top: 16px;
+}
+.news .wrap .items .item .titles a {
+  display: block;
+  height: 34px;
+  color: #000;
+}
+.news .wrap .items .item .titles a .dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+  top: -13.5px;
+}
+.news .wrap .items .item .titles a li {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  list-style: disc;
+  padding-left: 15px;
+  width: 98%;
+  /*要显示文字的宽度*/
+  overflow: hidden;
+  /*超出的部分隐藏起来。*/
+  white-space: nowrap;
+  /*不显示的地方用省略号...代替*/
+  text-overflow: ellipsis;
+  /* 支持 IE */
+}

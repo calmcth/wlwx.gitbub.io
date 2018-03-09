@@ -1,0 +1,102 @@
+.product-nav {
+  background: url(/sources/static/image/product/internation/banner-internation-sms.png?t=1516926812547v1.0.0) no-repeat center center;
+}
+.internation {
+  width: 100%;
+  font-family: MicrosoftYaHei;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+}
+.internation .business {
+  height: 604px;
+  width: 100%;
+}
+.internation .business .business_title {
+  height: 28px;
+  margin: 40px 0;
+  text-align: center;
+  font-size: 28px;
+  line-height: 40px;
+  color: #323945;
+}
+.internation .business .business_subhead {
+  height: 16px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 0px;
+  color: #323945;
+}
+.internation .business .message {
+  width: 660px;
+  height: 460px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 63px;
+}
+.internation .business .message div {
+  display: block;
+  position: absolute;
+}
+.internation .business .message .m1 {
+  width: 267px;
+  height: 111px;
+  top: 41px;
+  right: 4px;
+  background: url(/sources/static/image/product/internation/m1.png?t=1516926812547v1.0.0) no-repeat center center;
+}
+.internation .business .message .m2 {
+  width: 267px;
+  height: 130px;
+  top: 14px;
+  left: -3px;
+  background: url(/sources/static/image/product/internation/m2.png?t=1516926812547v1.0.0) no-repeat center center;
+}
+.internation .business .message .m3 {
+  width: 264px;
+  height: 97px;
+  top: 230px;
+  right: -100px;
+  background: url(/sources/static/image/product/internation/m3.png?t=1516926812547v1.0.0) no-repeat center center;
+}
+.internation .business .message .m4 {
+  width: 271px;
+  height: 111px;
+  top: 207px;
+  left: -116px;
+  background: url(/sources/static/image/product/internation/m4.png?t=1516926812547v1.0.0) no-repeat center center;
+}
+.internation .business .message .phone {
+  width: 240px;
+  height: 280px;
+  bottom: 1px;
+  left: 210px;
+  background: url(/sources/static/image/product/internation/phone.png?t=1516926812547v1.0.0) no-repeat center center;
+}
+.internation .advantage {
+  display: flex;
+  justify-content: center;
+  height: 360px;
+  background: #eeeeee;
+}
+.internation .advantage div {
+  width: 318px;
+  height: 261px;
+  margin: 51px 20px;
+  background: #ffffff;
+}
+.internation .advantage .advantage_subhead {
+  text-align: center;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #313844;
+}
+.internation .advantage .advantage_content {
+  text-align: center;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  color: #787b80;
+}

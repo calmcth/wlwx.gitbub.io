@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>返回值说明-未来无线短信API</title>
+    
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="/sources/js/lib/require.js?t=1519633410329v1.0.0"></script>
+<script src="/sources/js/config.js?t=1519633410329v1.0.0"></script>
+<script src="/sources/js/app.js?t=1519633410329v1.0.0"></script>
+<link rel="shortcut icon" href="/sources/static/image/favicon.ico"/>
+<link rel="stylesheet" href="/sources/static/style/commonPage/reset.min.css?t=1519633410329v1.0.0">
+<link rel="stylesheet" href="/sources/static/style/commonPage/nav.css">
+<link rel="stylesheet" href="/sources/js/lib/animate.css?t=1519633410329v1.0.0">
+<link rel="stylesheet" href="/sources/static/style/commonPage/global.css">
+
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/support/supportNav.css">
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/support/support.css">
+</head>
+<body>
+<div id="nav" class="nav">
+    <div class="wrap clearfix">
+        <div class="logo"><a href="/index.html"></a></div>
+        <div class="btn">
+            <div class="login"><a href="#">登录</a></div>
+            <div class="reg"><a href="#">注册</a></div>
+        </div>
+        <div class="menus">
+            <ul id="menus" class="menus-cell clearfix">
+                <li class="menu">
+                    <h3><a href="/index.html">首页</a></h3>
+                </li>
+                <li class="menu active">
+                    <h3><a href="/view/support/supportGuide.html">引导说明</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportInstruction.html">使用说明</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportSDK.html">SDK下载</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportDemo.html">代码示例</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportReturn.html">返回值说明</a></h3>
+                </li>
+                <li class="move"></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="support_main_div" id="support-return">
+    <div class="support_content">
+        <div style="margin: 20px 20px 40px 40px;">
+            <h2 class="support_title">短信发送/查询返回码</h2>
+            <table class="support_table">
+                <thead>
+                <tr>
+                    <th style="width: 240px;">respCode返回码</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="item in respTable" :key="item.code">
+                    <td style="text-align: center;">{{item.code}}</td>
+                    <td style="padding: 0 50px;">{{item.exp}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <h2 class="support_title">code错误码</h2>
+            <table class="support_table">
+                <thead>
+                <tr>
+                    <th style="width: 240px;">code响应值</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="item in codeTable" :key="item.code">
+                    <td style="text-align: center;">{{item.code}}</td>
+                    <td style="padding: 0 50px;">{{item.exp}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <h2 class="support_title">通道响应错误码</h2>
+            <p>部分过滤规则用系统生成状态报告返回，生成的状态报告错误码如下（所有协议统一错误码）：</p>
+            <table class="support_table">
+                <thead>
+                <tr>
+                    <th style="width: 240px;">错误码</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="item in channelTable" :key="item.code">
+                    <td style="text-align: center;">{{item.code}}</td>
+                    <td style="padding: 0 50px;">{{item.exp}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="/sources/js/lib/jquery.min.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/controller/nav.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/common/SuperSlide.2.1.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/common/daimabiji.js?t=1516926812547v1.0.0"></script>
+<script>
+    require(['controller/supportReturn'], function () {
+
+    });
+</script>
+</body>
+</html>

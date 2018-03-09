@@ -1,0 +1,180 @@
+.product-nav {
+  background: url(/sources/static/image/product/flow/banner-flow.png?t=1516926812547v1.0.0) no-repeat center center;
+}
+.flow_main_div {
+  font-family: "MicrosoftYaHei";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+}
+.flow_main_reason {
+  width: 100%;
+  height: 400px;
+}
+.flow_main_reason .main_title {
+  line-height: 40px;
+  font-size: 24px;
+  height: 40px;
+  text-align: center;
+  font-stretch: normal;
+  font-weight: normal;
+  margin: 40px 0;
+}
+.flow_main_reason .reason_ul {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.flow_main_reason .reason_ul .reason_li {
+  z-index: 3;
+  display: inline-block;
+  width: 240px;
+  height: 280px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(198, 198, 198, 0.5);
+  border-radius: 2px;
+  margin: 0 30px ;
+}
+.flow_main_reason .reason_ul .reason_li img {
+  width: 76px;
+  height: 76px;
+}
+.flow_main_reason .reason_ul .reason_li p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #343940;
+}
+.flow_main_reason .reason_ul .reason_li .reason_title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.flow_main_reason .reason_ul .reason_li .reason_subhead {
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #787b80;
+}
+.flow_main_reason .reason_ul .reason_li:hover {
+  background: #f0ffff;
+}
+.flow_main_reason .reason_ul .reason_li:hover img {
+  text-shadow: 0px 0px 20px #83a2f4;
+  -webkit-animation: moveFromTop 400ms ease;
+  -moz-animation: moveFromTop 400ms ease;
+  -ms-animation: moveFromTop 400ms ease;
+}
+.flow_main_reason .reason_ul .reason_li:hover .reason_title {
+  -webkit-animation: moveFromTop 300ms ease;
+  -moz-animation: moveFromTop 300ms ease;
+  -ms-animation: moveFromTop 300ms ease;
+}
+.flow_main_reason .reason_ul .reason_li:hover .reason_subhead {
+  -webkit-animation: moveFromBottom 500ms ease;
+  -moz-animation: moveFromBottom 500ms ease;
+  -ms-animation: moveFromBottom 500ms ease;
+}
+@-webkit-keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-200%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+  }
+}
+@-moz-keyframes moveFromTop {
+  from {
+    -moz-transform: translateY(-200%);
+  }
+  to {
+    -moz-transform: translateY(0%);
+  }
+}
+@-ms-keyframes moveFromTop {
+  from {
+    -ms-transform: translateY(-200%);
+  }
+  to {
+    -ms-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(200%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+  }
+}
+@-moz-keyframes moveFromBottom {
+  from {
+    -moz-transform: translateY(200%);
+  }
+  to {
+    -moz-transform: translateY(0%);
+  }
+}
+@-ms-keyframes moveFromBottom {
+  from {
+    -ms-transform: translateY(200%);
+  }
+  to {
+    -ms-transform: translateY(0%);
+  }
+}
+.flow_main_strategy {
+  width: 100%;
+  height: 560px;
+  margin-top: 100px;
+}
+.flow_main_strategy .main_title {
+  line-height: 40px;
+  font-size: 24px;
+  height: 40px;
+  text-align: center;
+  font-stretch: normal;
+  font-weight: normal;
+  margin: 40px 0;
+}
+.flow_main_strategy .strategy_ul {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.flow_main_strategy .strategy_ul .strategy_li {
+  z-index: 3;
+  display: inline-block;
+  width: 360px;
+  height: 380px;
+  border: solid 1px #dadada;
+  background-color: #ffffff;
+  margin: 0 20px ;
+}
+.flow_main_strategy .strategy_ul .strategy_li img {
+  width: 300px;
+  height: 200px;
+}
+.flow_main_strategy .strategy_ul .strategy_li p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #343940;
+  margin: 0 20px 0 20px;
+}
+.flow_main_strategy .strategy_ul .strategy_li .reason_title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 18px auto;
+}
+.flow_main_strategy .strategy_ul .strategy_li .reason_subhead {
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #787b80;
+}

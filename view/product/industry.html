@@ -1,0 +1,36 @@
+<div id="industry">
+    <div class="sms_main_div">
+        <div class="sms_main_reason">
+            <h2 class="main_title">选择理由</h2>
+            <div class="reason_main_div">
+                <div class="reason_label" v-for="item in reasonList" :key="item.name" :data-type="item.name">
+                    <div class="col-left">
+                        <img :src="'/sources/static/image/product/industry/'+item.img" width="72" height="72">
+                    </div>
+                    <div class="col-right">
+                        <h1 class="col-right-title">{{item.title}}</h1>
+                        <p class="col-right-subhead">{{item.subhead}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sms_main_platform">
+            <h2 class="main_title">平台保障</h2>
+            <div class="guarantee_main_div">
+                <div class="guarantee_label" v-for="item in guarantee" :key="item.name" :data-type="item.name" >
+                    <div class="col-img" v-if="item.right" style="margin-left: 15px;float:right;">
+                        <img :src="'/sources/static/image/product/industry/'+item.img"  width="76" height="76">
+                    </div>
+                    <div class="col-img" v-if="item.left" style="margin-right: 15px;float: left">
+                        <img :src="'/sources/static/image/product/industry/'+item.img"  width="76" height="76">
+                    </div>
+                    <div class="col-content"  :style="{ textAlign:typeof item.right!=='undefined'?'right':'left'}">
+                        <h1 class="col-content-h1">{{item.title}}</h1>
+                        <p class="col-content-subhead" style="margin-top: 14px">{{item.subhead_one}}</p>
+                        <p class="col-content-subhead">{{item.subhead_two}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

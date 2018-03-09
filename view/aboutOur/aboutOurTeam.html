@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们-团队风采</title>
+    
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="/sources/js/lib/require.js?t=1519633410329v1.0.0"></script>
+<script src="/sources/js/config.js?t=1519633410329v1.0.0"></script>
+<script src="/sources/js/app.js?t=1519633410329v1.0.0"></script>
+<link rel="shortcut icon" href="/sources/static/image/favicon.ico"/>
+<link rel="stylesheet" href="/sources/static/style/commonPage/reset.min.css?t=1519633410329v1.0.0">
+<link rel="stylesheet" href="/sources/static/style/commonPage/nav.css">
+<link rel="stylesheet" href="/sources/js/lib/animate.css?t=1519633410329v1.0.0">
+<link rel="stylesheet" href="/sources/static/style/commonPage/global.css">
+
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/aboutOur/aboutOurNav.css">
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/aboutOur/aboutOur.css">
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/aboutOur/team.css">
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/home/footer.css">
+</head>
+<body>
+<div id="nav" class="nav">
+    <div class="wrap clearfix">
+        <div class="logo"><a href="/index.html"></a></div>
+        <div class="btn">
+            <div class="login"><a href="#">登录</a></div>
+            <div class="reg"><a href="#">注册</a></div>
+        </div>
+        <div class="menus">
+            <ul id="menus" class="menus-cell clearfix">
+                <li class="menu active">
+                    <h3><a href="/index.html">首页</a></h3>
+                </li>
+                <li class="menu">
+                    <h3>产品</h3>
+                    <ul class="sub">
+                        <li><a href="/view/product/product.html">行业短信</a></li>
+                        <li><a href="/view/product/productVoice.html">语音验证码</a></li>
+                        <li><a href="/view/product/productFlow.html">流量业务</a></li>
+                        <li><a href="/view/product/productColorMsg.html">彩信服务</a></li>
+                        <li><a href="/view/product/productInternationSms.html">国际短信</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/guideDoc/guideDoc.html">接口文档</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/solution/solutionPlan.html">解决方案</a></h3>
+                </li>
+                <li class="menu">
+                    <h3>关于我们</h3>
+                    <ul class="sub">
+                        <li><a href="/view/aboutOur/aboutOur.html">公司介绍</a></li>
+                        <li><a href="/view/aboutOur/aboutOurState.html">公司动态</a></li>
+                        <li><a href="/view/aboutOur/aboutOurTeam.html">团队风采</a></li>
+                        <li><a href="/view/aboutOur/aboutOurJob.html">人才招聘</a></li>
+                        <li><a href="/view/aboutOur/aboutOurLink.html">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="move"></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="aboutOur-nav">
+    <div class="text">
+        <div class="t1">大时代 大数据 大价值</div>
+        <!--<div class="t2">&#45;&#45;&#45;&#45;关于未来无线</div>-->
+    </div>
+    <ul id="subNav" class="subNav">
+        <li><a href="/view/aboutOur/aboutOur.html">公司介绍</a></li>
+        <li><a href="/view/aboutOur/aboutOurState.html">公司动态</a></li>
+        <li><a href="/view/aboutOur/aboutOurTeam.html">团队风采</a></li>
+        <li><a href="/view/aboutOur/aboutOurJob.html">人才招聘</a></li>
+        <li><a href="/view/aboutOur/aboutOurLink.html">联系我们</a></li>
+    </ul>
+</div>
+<div id="aboutOur_team" class="aboutOur-team" >
+    <div class="main" v-if="show === false">
+        <div class="item" v-for="item,index in team">
+            <div class="pic"><img :src="'/sources/static/image/aboutOur/team/'+item.imgPath" alt=""></div>
+            <div class="title">{{item.title}}</div>
+            <div class="info">
+                <span class="txt">公司活动</span>
+                <span class="time">{{item.time}}</span>
+                <span class="btn" @click="viewDetail(index)">更多详情</span>
+            </div>
+        </div>
+    </div>
+    <div class="view_detail" v-if="show === true">
+    <div class="team_detail">
+        <span class="btn" @click="backList()">
+            <img src="/sources/static/image/aboutOur/team/pre.png?t=1516926812547v1.0.0" width="18" height="18" style="float: left;margin: 6px 0;">
+            返回列表
+        </span>
+        <div class="detail" v-for="item,index in team" v-if="item.show === true">
+            <div class="head">
+                <p class="title">{{item.title}}</p>
+                <p class="time">{{item.time}}</p>
+            </div>
+            <div class="content">
+                <div v-for="(de,key,index) in detailItem">
+                    <p v-if="key !== 'img'+(index+1)">{{de}}</p>
+                    <img v-if="key === 'img'+(index+1)"  :src="'/sources/static/image/aboutOur/team/'+de">
+                </div>
+            </div>
+            <div class="bottom">
+                <span class="btn_none" v-if="pre === false">
+                    <img src="/sources/static/image/aboutOur/team/pre.png?t=1516926812547v1.0.0">
+                </span>
+                <span class="btn_page" v-if="pre === true" @click="viewDetail(index-1)">
+                    <img src="/sources/static/image/aboutOur/team/pre.png?t=1516926812547v1.0.0" style="float: left;margin: 6px 0;margin-left: 6px;">
+                    上一篇
+                </span>
+                <span class="btn_page" v-if="next === true" @click="viewDetail(index+1)">
+                    <img src="/sources/static/image/aboutOur/team/next.png?t=1516926812547v1.0.0" style="float: right;margin: 6px 0;margin-right: 6px;">
+                    下一篇
+                </span>
+                <span class="btn_none" v-if="next === false">
+                    <img src="/sources/static/image/aboutOur/team/next.png?t=1516926812547v1.0.0">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="team_list">
+        <div class="more">更多动态</div>
+        <div class="list">
+            <div class="overview" v-for="item,index in team" v-if="item.show === false" @click="viewDetail(index)">
+                <img :src="'/sources/static/image/aboutOur/team/'+item.imgPath">
+                <div class="page">
+                    <p class="page_top">{{item.title}}</p>
+                    <p class="page_middle">{{item.more}}</p>
+                    <p class="page_time">{{item.time}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="info">
+            <div class="right">
+
+                <div class="scan">
+                    <p>
+                        <!--<img src="../../sources/static/image/scan.png" align="middle" class="icon" alt="scan">-->
+                        扫码关注官方微信 </p>&nbsp;
+                </div>
+                 <img src="/sources/static/image/erweima.png?t=1519632839011v1.0.0" alt="公司官方微信" class="wechat">
+
+
+
+            </div>
+            <div class="left">
+                <div class="phone">
+                    <p>
+                        <img src="/sources/static/image/pho.png?t=1519632839011v1.0.0" align="middle" class="icon" alt="phone">
+                        24小时服务热线 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0591-87111929
+                    </p>
+                </div>
+                <div class="box">
+                    <p class="add">
+                        <img src="/sources/static/image/loc.png?t=1519632839011v1.0.0" align="middle" class="icon" alt="location">
+                        公司联系地址
+                    </p>
+                    <div class="add_list">
+                        <p>公 司 总 部：福建福州晋安区东二环泰禾广场8号楼15层</p>
+                        <p>上海分公司：上海市杨浦区国定东路275号8号楼13A01</p>
+                        <p>广州分公司：广州市海珠区新港东路1068号中洲中心北塔1310室</p>
+                        <p>北京分公司：北京市朝阳区国粹苑A座3105-3109</p>
+                        <p>深圳分公司：深圳市南山区科技园东方科技大厦14层</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="CopyRight">
+                CopyRight 2013-2016. Inc.ALL Right Reserved 福建未来无线信息技术有限公司
+                <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action;jsessionid=yghXXR8GtqCtJ5t9ZG2b8DyTLstXvsNmWxSZ629RmjTn0SvCDJlG"
+                   alt="备案查询" target="_blank">
+                    备案:闽ICP备14009195号-2
+                </a>
+            </div>
+            <div class="Right"><span class="icon"><img src="/sources/static/image/ghs.png?t=1519632839011v1.0.0" alt="" width="20px" height="20px"></span><span class="txt">闽公网安备 35010202000529号</span></div>
+        </div>
+    </div>
+</div>
+<script src="/sources/js/lib/jquery.min.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/controller/nav.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/common/SuperSlide.2.1.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/common/daimabiji.js?t=1516926812547v1.0.0"></script>
+<script>
+    require(['controller/product','controller/aboutOurTeam'], function () {
+
+    });
+</script>
+</body>
+</html>

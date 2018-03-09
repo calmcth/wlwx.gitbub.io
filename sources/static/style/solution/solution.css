@@ -1,0 +1,106 @@
+.plan {
+  color: #fff;
+  min-width: 1030px;
+}
+.plan .plan-1 {
+  height: 1066px;
+  overflow: hidden;
+  background: url("/sources/static/image/solution/plan1.jpg") no-repeat center center;
+}
+.plan .plan-1 .wrap {
+  width: 1030px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.plan .plan-1 .wrap .info {
+  height: 471px;
+  margin-top: 232px;
+}
+.plan .plan-1 .wrap .info h1 {
+  font-size: 43px;
+  height: 70px;
+  line-height: 70px;
+}
+.plan .plan-1 .wrap .info h2 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.plan .plan-1 .wrap .items {
+  width: 100%;
+  height: 284px;
+  display: flex;
+  display: -webkit-flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.plan .plan-1 .wrap .items .item {
+  width: 190px;
+  height: 90px;
+  margin-right: 20px;
+  margin-top: 174px;
+}
+.plan .plan-1 .wrap .items .item:nth-last-child(1) {
+  margin-right: 0;
+}
+.plan .plan-1 .wrap .items .item .icon {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  padding: 0 73px;
+}
+.plan .plan-1 .wrap .items .item h1 {
+  font-size: 18px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.plan .plan-2 {
+  overflow: hidden;
+  height: 1120px;
+  background: url("/sources/static/image/solution/plan2.jpg") no-repeat center center;
+}
+.plan .plan-2 .title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0;
+  margin: 60px 0 20px 0;
+}
+.plan .plan-2 .wrap {
+  width: 1030px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.plan .plan-2 .wrap .items {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.plan .plan-2 .wrap .items .item {
+  width: 282px;
+  height: 245px;
+  margin: 30px;
+}
+.plan .plan-2 .wrap .items .item .pic {
+  width: 52px;
+  height: 52px;
+}
+.plan .plan-2 .wrap .items .item h1 {
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+}
+.plan .plan-2 .wrap .items .item p {
+  line-height: 1.5;
+  font-size: 12px;
+}

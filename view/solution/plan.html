@@ -1,0 +1,29 @@
+<div id="solution" class="plan">
+    <div class="plan-1">
+        <div class="wrap">
+            <div class="info">
+                <h1>量身定制的通讯解决方案</h1>
+                <h2>根据不同行业使用场景提供相对应</h2>
+                <h2>高效便捷的解决方案</h2>
+            </div>
+            <div class="items">
+                <div class="item" v-for="item in plan1">
+                    <div class="icon"><img :src="'/sources/static/image/solution/'+item.img" alt=""></div>
+                    <h1>{{item.title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="plan-2">
+         <h1 class="title">满足各行业使用场景的解决方案</h1>
+         <div class="wrap">
+             <div class="items">
+                 <div class="item" v-for="item in plan2">
+                     <div class="pic"><img :src="'/sources/static/image/solution/'+item.img" alt=""></div>
+                     <h1>{{item.title}}</h1>
+                     <p>{{item.content}}</p>
+                 </div>
+             </div>
+         </div>
+    </div>
+</div>

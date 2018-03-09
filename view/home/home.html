@@ -1,0 +1,99 @@
+<div class="home_topDiv">
+    <div class="home_title">
+        <p class="home_infobox home_title_h1">未来无线云通讯服务商</p>
+        <p class="home_infobox home_title_subhead">
+            运营商战略合作,三网合一,快速响应
+        </p>
+        <p class="home_infobox home_title_subhead" style="margin: 0">
+            24小时全天候服务保障
+        </p>
+        <div class="home_Access_experience">
+            <button class="home_infobox home_Access_experience_btn">接入体验</button>
+        </div>
+    </div>
+</div>
+<div id="app">
+    <div class="home_main_business">
+        <ul class="home_business_ul">
+            <li v-for="item ,index in list" :key="item.name" class="home_business_li" :style="{ marginTop:item.top+'px' }"
+                @mouseenter="mouseOver($event,item.name)" @mouseleave="mouseOut($event,item.name)">
+                <a :href="item.href">
+                    <div v-if="hoverName===item.name">
+                        <div style="padding:8px 9px 9px;">
+                            <img :src="'/sources/static/image/home/business/'+item.hoverImg">
+                        </div>
+                        <p class="main_title">{{item.title}}</p>
+                        <p v-if="index!=3" class="subhead_title" style="margin-top: 70px">{{item.subhead_one}}</p>
+                        <p v-if="index!=3" class="subhead_title">{{item.subhead_two}}</p>
+                        <p v-if="index==3" class="subhead_title" style="margin-top: 50px">{{item.subhead_one}}</p>
+                    </div>
+                    <div v-else>
+                        <div style="padding:52px 64px 24px 64px;">
+                            <img :src="'/sources/static/image/home/business/'+item.img">
+                        </div>
+                        <p class="main_title">{{item.title}}</p>
+                        <p class="subhead_title" style="margin-top: 30px">{{item.subhead_one}}</p>
+                        <p class="subhead_title">{{item.subhead_two}}</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="home_advantage_main">
+        <h2 class="home_advantage_title">平台优势</h2>
+        <div class="home_advantage_main_div">
+            <canvas id="home_advantage_canvas" class="home_advantage_canvas" width="450" height="450"></canvas>
+            <div class="home_advantage_label" :key="item.name" :data-type="item.name" v-for="item in advantageList"
+                 :style="getAdvantageClass(item)" @mouseenter="mouseOver($event,item.name)"
+                 @mouseleave="mouseOut($event,item.name)">
+                <div class="col-left" v-if="item.right" style="margin-right: 15px">
+                    <img v-show="hoverName===item.name" :src="'/sources/static/image/home/advantage/'+item.hoverImg"
+                         width="76" height="76">
+                    <img v-show="hoverName!==item.name" :src="'/sources/static/image/home/advantage/'+item.img"
+                         width="76" height="76">
+                </div>
+                <div class="col-middle" :style="{ textAlign:typeof item.right!=='undefined'?'left':'right'}">
+                    <h1 class="col-middle-h1">{{item.title}}</h1>
+                    <p class="col-middle-subhead" style="margin-top: 14px">{{item.subhead_one}}</p>
+                    <p class="col-middle-subhead">{{item.subhead_two}}</p>
+                </div>
+                <div class="col-left" v-if="item.left" style="margin-left: 15px">
+                    <img v-show="hoverName===item.name" :src="'/sources/static/image/home/advantage/'+item.hoverImg"
+                         width="76" height="76">
+                    <img v-show="hoverName!==item.name" :src="'/sources/static/image/home/advantage/'+item.img"
+                         width="76" height="76">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home_main_apply">
+        <h2 class="home_apply_title">丰富的应用场景</h2>
+        <div class="home_apply_main_div">
+            <div class="home_apply_div">
+                <div class="home_apply_item" :class="{'active':item.active}" v-for="item in applyList"
+                     :style="getApplyClass(item)" @click="clickApply($event,item)" @mouseover="clickApply($event,item)">
+                    <div class="apply_label">{{item.label}}</div>
+                </div>
+                <div :class="{'active_right':left,'active_left':!left}" :style="getLineClass()"></div>
+                <div class="home_apply_phone">
+                    <img :src="clickImg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--24小时客服热线-->
+    <div class="service" v-if="serviceNum" @mouseenter="mouseenterServiceNum" >
+        <div class="icon"></div>
+        <div class="txt">24小时</div>
+    </div>
+    <div class="service-hover" v-if="!serviceNum" @mouseleave="mouseleaveServiceNum">
+        <div class="num">
+            <div>24小时客服热线</div>
+            <div>0591-87111929</div>
+        </div>
+        <div class="service-h">
+            <div class="icon"></div>
+        </div>
+    </div>
+</div>
+

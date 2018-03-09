@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "fis3 release -c",
+    "start": "fis3 server start -p 8081",
+    "watch": "fis3 release -cwL",
+    "build": "fis3 release -d ./dist",
+    "proBuild": "fis3 release pro"
+  },
+  "devDependencies": {
+    "fis-parser-babel-5.x": "^1.4.0",
+    "fis3-parser-babel6": "^0.1.3",
+    "fis3-parser-vm": "^0.0.2",
+    "fis3-hook-relative":"^2.0.1",
+    "fis-parser-babel-6.x":"^6.24.1",
+    "fis-parser-less-2.x":"^0.1.4"
+
+  },
+  "dependencies": {
+    "fis3-parser-vm": "^0.0.2"
+  }
+}

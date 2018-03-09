@@ -1,0 +1,204 @@
+.row {
+  width: 890px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 0;
+}
+.column {
+  display: inline-block;
+  font-size: 14px;
+  width: 20%;
+  text-align: center;
+}
+.column:first-child {
+  text-align: left;
+}
+.open {
+  display: block;
+}
+.aboutOur-link {
+  width: 100%;
+  padding: 0 0 70px 0;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.aboutOur-link .main {
+  width: 1030px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.aboutOur-link .main .link-num {
+  width: 700px;
+  height: 100px;
+  margin: 52px auto 0 auto;
+}
+.aboutOur-link .main .link-num .wrap {
+  margin-left: -78px;
+}
+.aboutOur-link .main .link-num .number {
+  display: inline-block;
+  height: 48px;
+  margin-left: 30px;
+}
+.aboutOur-link .main .link-num .number span {
+  display: block;
+}
+.aboutOur-link .main .link-num .number span:nth-child(1) {
+  font-size: 24px;
+}
+.aboutOur-link .main .link-num .number span:nth-child(2) {
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+.aboutOur-link .main .address {
+  width: 100%;
+  height: 567px;
+}
+.aboutOur-link .main .address .text {
+  width: 700px;
+  height: 167px;
+  margin: 0 auto;
+  text-align: left;
+}
+.aboutOur-link .main .address .text h3 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 110px;
+}
+.aboutOur-link .main .address .text span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.aboutOur-link .main .address .container {
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+}
+.aboutOur-link .main .address:nth-child(2) {
+  margin-top: -116px;
+}
+.aboutOut-job {
+  width: 100%;
+  padding: 0 0 70px 0;
+  background-color: #eeeeee;
+}
+.aboutOut-job .main {
+  width: 1030px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+.aboutOut-job .main .wrap {
+  width: 890px;
+  margin: 0 auto;
+}
+.aboutOut-job .main .wrap .tabs {
+  width: 100%;
+  height: 112px;
+  font-size: 0;
+  line-height: 112px;
+}
+.aboutOut-job .main .wrap .tabs span {
+  display: inline-block;
+  width: 88px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #303a43;
+  background-color: #edefee;
+  font-size: 14px;
+}
+.aboutOut-job .main .wrap .tabs span.active {
+  color: #fff;
+  background-color: #2a7fff;
+}
+.aboutOut-job .main .wrap .content .row .column:last-child {
+  cursor: pointer;
+}
+.aboutOut-job .main .wrap .detail {
+  background-color: #f5f5f5;
+  font-size: 14px;
+}
+.aboutOut-job .main .wrap .detail .item {
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+.aboutOut-job .main .wrap .detail .item ul {
+  padding-top: 15px;
+}
+.aboutOut-job .main .wrap .detail .item h3,
+.aboutOut-job .main .wrap .detail .item ul li {
+  height: 28px;
+  line-height: 28px;
+}
+.aboutOur-team {
+  width: 100%;
+  padding: 0 0 70px 0;
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+.aboutOur-team .main {
+  width: 1030px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+.aboutOur-team .main .item {
+  width: 966px;
+  height: 314px;
+  margin: 32px auto;
+  overflow: hidden;
+}
+.aboutOur-team .main .item .pic {
+  width: 318px;
+  height: 250px;
+  float: left;
+}
+.aboutOur-team .main .item .title {
+  width: 324px;
+  height: 250px;
+  line-height: 250px;
+  text-align: center;
+  float: left;
+  color: #343940;
+  font-size: 17px;
+}
+.aboutOur-team .main .item .info {
+  width: 324px;
+  height: 250px;
+  float: left;
+}
+.aboutOur-team .main .item .info .txt,
+.aboutOur-team .main .item .info .time {
+  display: block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 70px;
+}
+.aboutOur-team .main .item .info .txt {
+  margin-top: 70px;
+}
+.aboutOur-team .main .item .info .btn {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #297fff;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 70px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.aboutOur-team .main .item:hover .title {
+  color: #297fff;
+}

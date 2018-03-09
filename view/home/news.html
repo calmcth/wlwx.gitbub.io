@@ -1,0 +1,84 @@
+<!--我们的客户，我们的荣誉与你一起见证 开始-->
+<div class="users">
+    <div class="wrap">
+        <div class="user">
+            <div class="wrap">
+                <div class="title">我们的客户</div>
+                <div class="logos">
+                    <div class="item-1">
+                        <!--京东-->
+                        <span class="logo-1"></span>
+                        <!--新浪网-->
+                        <span class="logo-2"></span>
+                        <!--福建海峡银行-->
+                        <span class="logo-3"></span>
+                        <!--世纪佳缘-->
+                        <span class="logo-4"></span>
+                        <!--腾讯云-->
+                        <span class="logo-5"></span>
+                    </div>
+                    <div class="item-2">
+                        <!--百度-->
+                        <span class="logo-6"></span>
+                        <!--民生银行-->
+                        <span class="logo-7"></span>
+                        <!--唯品会-->
+                        <span class="logo-8"></span>
+                        <!--永辉超市-->
+                        <span class="logo-9"></span>
+                        <!--政务通-->
+                        <span class="logo-10"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="honor">
+            <div class="cell">
+                <div class="title">我们的荣誉与你一起见证</div>
+                <div class="img"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--我们的客户，我们的荣誉与你一起见证 结束-->
+<!--公司动态开始-->
+<div class="news">
+    <div class="wrap">
+        <div class="items clearfix">
+            <!--公司动态-->
+            <div class="item" id="state">
+                <div class="header">
+                    <span class="className">公司动态</span>
+                    <span class="moreBtn"><a href="/view/aboutOur/aboutOurState.html">更多</a></span>
+                </div>
+                <div class="banner" v-for="item,index in stateList" v-if="index==0" >
+                    <a href="/view/aboutOur/aboutOurState.html?index=0">
+                     <img :src="'/sources/static/image/aboutOur/state/'+item.img" alt="">
+                     <div class="title">{{item.title}}</div>
+                    </a>
+                </div>
+                <ul class="titles">
+                    <a :href="'/view/aboutOur/aboutOurState.html?index='+index" v-for="item,index in stateList" v-if="0<index && index <5"><span class="dot"></span><li>{{item.title}}</li></a>
+                </ul>
+            </div>
+            <!--团队风采-->
+            <div class="item" id="aboutOur_team">
+                <div class="header">
+                    <span class="className">团队风采</span>
+                    <span class="moreBtn"><a href="/view/aboutOur/aboutOurTeam.html">更多</a></span>
+                </div>
+                <div class="banner" v-for="item,index in team" v-if="index==0" >
+                    <a href="/view/aboutOur/aboutOurTeam.html?index=0">
+                    <img :src="'/sources/static/image/aboutOur/team/'+item.imgPath" alt="">
+                    <div class="title">{{item.title}}</div>
+                    </a>
+                </div>
+                <ul class="titles">
+                    <a :href="'/view/aboutOur/aboutOurTeam.html?index='+index" v-for="item,index in team" v-if="0<index && index <5"><span class="dot"></span><li>{{item.title}}</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--公司动态结束-->
+

@@ -1,0 +1,130 @@
+.sms_main_div {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #323945;
+  background: url(/sources/static/image/product/industry/industry.png?t=1516926812547v1.0.0) no-repeat center 400px;
+}
+/*选择理由*/
+.sms_main_reason {
+  height: 560px;
+  margin-top: 6px;
+}
+.sms_main_reason .main_title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 28px;
+  color: #323945;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0;
+  margin: 60px 0 20px 0;
+}
+.sms_main_reason .reason_main_div {
+  width: 1080px;
+  display: flex;
+  display: -webkit-flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.sms_main_reason .reason_main_div .reason_label {
+  width: 500px;
+  height: 150px;
+  background: #ffffff;
+  margin: 50px 20px 10px 20px;
+}
+.sms_main_reason .reason_main_div .reason_label .col-left {
+  float: left;
+  margin: 36px 36px 36px 60px;
+}
+.sms_main_reason .reason_main_div .reason_label .col-left img {
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  /* Firefox 4 */
+  -webkit-transition: transform 1s;
+  /* Safari 和 Chrome */
+  -o-transition: transform 1s;
+}
+.sms_main_reason .reason_main_div .reason_label .col-right {
+  float: left;
+  height: 72px;
+  margin: 36px auto;
+}
+.sms_main_reason .reason_main_div .reason_label .col-right .col-right-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #343940;
+}
+.sms_main_reason .reason_main_div .reason_label .col-right .col-right-subhead {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #7b818c;
+}
+.sms_main_reason .reason_main_div .reason_label:hover {
+  box-shadow: 0 6px 14px 0 rgba(198, 198, 198, 0.5);
+  background: #f5f5f5;
+}
+.sms_main_reason .reason_main_div .reason_label:hover img {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  /* Safari 与 Chrome */
+}
+/*平台保障*/
+.sms_main_platform {
+  height: 1300px;
+}
+.sms_main_platform .main_title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 28px;
+  color: #323945;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0;
+  padding: 60px 0 20px 0;
+}
+.sms_main_platform .guarantee_main_div {
+  width: 1080px;
+  margin: 0 auto;
+}
+.sms_main_platform .guarantee_main_div .guarantee_label {
+  width: 900px;
+  height: 130px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.sms_main_platform .guarantee_main_div .col-img {
+  background-size: 100px 100px;
+  background-position: center center;
+}
+.sms_main_platform .guarantee_main_div .col-content {
+  flex: 1;
+  -webkit-flex: 1;
+  font-weight: bold;
+  font-stretch: normal;
+}
+.sms_main_platform .guarantee_main_div .col-content .col-content-h1 {
+  height: 18px;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: #343940;
+}
+.sms_main_platform .guarantee_main_div .col-content .col-content-subhead {
+  padding: 4px 0;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #5f6775;
+}
+.sms_main_platform .guarantee_main_div .col-clear {
+  clear: both;
+}

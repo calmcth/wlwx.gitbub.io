@@ -1,0 +1,32 @@
+<div id="colorMsg">
+    <div class="sms_main_reason">
+        <h2 class="main_title">更专业的彩信营销服务</h2>
+        <div class="reason_main_div">
+            <div class="reason_label" v-for="item in colorMsgServer" :key="item.name" :data-type="item.name">
+                <div class="pic">
+                    <img :src="'/sources/static/image/product/colorMsg/'+item.img" width="48" height="48">
+                </div>
+                <h1>{{item.title}}</h1>
+                <h2>{{item.subhead1}}</h2>
+                <h2>{{item.subhead2}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="application-area">
+        <h2 class="main_title">丰富的应用领域</h2>
+        <div class="wrap">
+            <div class="left">
+                <div class="row" v-for="item in applicationArea_one">
+                    <h1><span class="dot"></span><span style="padding-left:8px">{{item.title}}</span></h1>
+                    <p>{{item.content}}</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="row" v-for="item in applicationArea_two">
+                    <h1><span class="dot"></span><span style="padding-left:8px">{{item.title}}</span></h1>
+                    <p>{{item.content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

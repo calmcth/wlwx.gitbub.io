@@ -1,0 +1,133 @@
+.view_detail {
+  width: 1030px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+.view_detail .team_detail {
+  border-bottom: #dadada 1px solid;
+  overflow: hidden;
+}
+.view_detail .team_detail .btn {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #c7c7c7;
+  font-size: 16px;
+  margin-left: 40px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.view_detail .team_detail .detail {
+  float: left;
+  width: 760px;
+  margin: 30px;
+}
+.view_detail .team_detail .detail .head {
+  height: 100px;
+  text-align: center;
+}
+.view_detail .team_detail .detail .head .title {
+  font-size: 24px;
+  line-height: 60px;
+}
+.view_detail .team_detail .detail .head .time {
+  font-size: 16px;
+  line-height: 30px;
+  color: #c7c7c7;
+}
+.view_detail .team_detail .detail .content {
+  line-height: 32px;
+  color: #343940;
+}
+.view_detail .team_detail .detail .content img {
+  margin: 20px 0;
+  width: 760px;
+  height: 480px;
+}
+.view_detail .team_detail .detail .content p {
+  text-indent: 2em;
+}
+.view_detail .team_detail .detail .bottom {
+  margin: 40px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.view_detail .team_detail .detail .bottom .btn_page {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  background: #297fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+.view_detail .team_detail .detail .bottom .btn_page img {
+  width: 18px;
+  height: 18px;
+}
+.view_detail .team_detail .detail .bottom .btn_none {
+  width: 30px;
+  height: 30px;
+  background: #c7c7c7;
+  margin: 10px;
+}
+.view_detail .team_detail .detail .bottom .btn_none img {
+  width: 18px;
+  height: 18px;
+  margin: 6px 6px;
+}
+.view_detail .team_list .more {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-left: solid #297fff 3px;
+}
+.view_detail .team_list .list {
+  margin: 30px 0 50px 0;
+  height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.view_detail .team_list .list .overview {
+  cursor: pointer;
+  width: 430px;
+  margin: 10px 40px;
+}
+.view_detail .team_list .list .overview img {
+  width: 150px;
+  height: 110px;
+  float: left;
+  vertical-align: middle;
+}
+.view_detail .team_list .list .overview .page {
+  float: left;
+  margin-left: 10px;
+}
+.view_detail .team_list .list .overview .page .page_top {
+  font-size: 20px;
+  margin: 5px 0;
+  color: #343940;
+}
+.view_detail .team_list .list .overview .page .page_middle {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #787b80;
+}
+.view_detail .team_list .list .overview .page .page_time {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #787b80;
+}

@@ -1,0 +1,149 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+.s_down {
+  background: #222333;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  color: #fff;
+  z-index: 20;
+}
+.nav .wrap {
+  position: absolute;
+  width: 1132px;
+  height: 50px;
+  left: 50%;
+  margin-left: -566px;
+  top: 14px;
+}
+.nav .wrap .logo {
+  float: left;
+  width: 137px;
+  height: 46px;
+  margin-top: 4px;
+  background: url(/sources/static/image/logo.png?t=1519632839011v1.0.0) no-repeat center center;
+}
+.nav .wrap .logo a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.nav .wrap .menus {
+  width: 450px;
+  height: 50px;
+  float: right;
+  position: relative;
+}
+.nav .wrap .menus .menus-cell {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.nav .wrap .menus .menus-cell .move {
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  left: 19.5px;
+  top: 47px;
+  background-color: #fff;
+  transition: left .3s linear 0s;
+  /*包含四个过度属性：执行变换属性、执行时间、速率、延迟*/
+  -webkit-transition: left .3s linear 0s;
+  /*chrome和safari*/
+  -moz-transition: left .3s linear 0s;
+  /*firefox*/
+  -o-transition: left .3s linear 0s;
+  /*opera*/
+}
+.nav .wrap .menus .menus-cell .menu {
+  float: left;
+  margin: 0 16px;
+  z-index: 30;
+}
+.nav .wrap .menus .menus-cell .menu .sub {
+  border-radius: 5px;
+  position: absolute;
+  left: 80px;
+  top: 50px;
+  width: 110px;
+  text-align: center;
+  background-color: #222333;
+  z-index: 20;
+  transition: height .4s;
+  overflow: hidden;
+}
+.nav .wrap .menus .menus-cell .menu .sub li {
+  width: 100%;
+  height: 43px;
+  line-height: 43px;
+  color: #fff;
+}
+.nav .wrap .menus .menus-cell .menu .sub li:hover {
+  background-color: #397de1;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(2) .sub {
+  left: 40px;
+  height: 0;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(5) .sub {
+  left: 310px;
+  height: 0;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(2):hover .sub {
+  height: 215px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(5):hover .sub {
+  height: 215px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(1).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(1):hover ~ .move {
+  left: 19.5px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(2).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(2):hover ~ .move {
+  left: 81px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(3).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(3):hover ~ .move {
+  left: 162px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(4).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(4):hover ~ .move {
+  left: 259px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(5).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(5):hover ~ .move {
+  left: 349px;
+}
+.nav .wrap .btn {
+  width: 160px;
+  height: 36px;
+  float: right;
+  line-height: 36px;
+  margin-top: 7px;
+}
+.nav .wrap .btn div {
+  width: 80px;
+  height: 36px;
+  float: left;
+  border-radius: 2px;
+  font-size: 14px;
+  text-align: center;
+}
+.nav .wrap .btn .reg {
+  background-image: linear-gradient(0deg, #448aff 0%, #2b6cff 100%), linear-gradient(#297fff, #297fff);
+}
+.nav a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}

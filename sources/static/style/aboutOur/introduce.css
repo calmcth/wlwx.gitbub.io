@@ -1,0 +1,34 @@
+.introduce {
+  background: #eeeeee;
+  width: 100%;
+  font-family: MicrosoftYaHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  padding: 0 0 100px 0;
+}
+.introduce .introduce_main_div {
+  width: 1030px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.introduce .introduce_main_div .main_div {
+  width: 756px;
+  margin: 0 0 0 20%;
+}
+.introduce .introduce_main_div .main_div .introduce_title {
+  height: 24px;
+  color: #343940;
+  line-height: 30px;
+  font-size: 24px;
+  padding: 70px 0;
+}
+.introduce .introduce_main_div .main_div .introduce_content {
+  color: #787b80;
+  line-height: 30px;
+  margin: 40px 0;
+}
+.introduce .introduce_main_div .main_div img {
+  height: 300px;
+}

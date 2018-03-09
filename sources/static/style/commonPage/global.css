@@ -1,0 +1,12 @@
+* {
+  font-family: MicrosoftYaHei-Bold;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+  clear: both;
+}

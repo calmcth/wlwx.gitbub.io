@@ -1,0 +1,94 @@
+.footer {
+  height: 330px;
+  background: #373d41;
+  padding-top: 37px;
+  font-family: "MicrosoftYaHei";
+  font-size: 14px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.footer .container {
+  width: 929px;
+  margin: 0 auto;
+}
+.footer .container .info {
+  position: relative;
+  color: #f4f8ff;
+  height: 226px;
+}
+.footer .container .info .right {
+  float: right;
+}
+.footer .container .info .right .scan {
+  padding-left: 16px;
+}
+.footer .container .info .right .wechat {
+  vertical-align: middle;
+  height: 132px;
+  width: 132px;
+  margin-top: 16px;
+}
+.footer .container .info .left {
+  width: 450px;
+  float: left;
+}
+.footer .container .info .left .phone {
+  padding: 0 0 10px 0;
+}
+.footer .container .info .left p {
+  padding: 0 0 12px 0;
+}
+.footer .container .info .left .box {
+  overflow: hidden;
+  width: 587px;
+}
+.footer .container .info .left .box .add {
+  display: inline-block;
+  float: left;
+  width: 118px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .container .info .left .box .add_list {
+  display: inline-block;
+  float: left;
+  margin-left: 47px;
+  color: #f4f8ff;
+}
+.footer .container .info .icon {
+  width: 24px;
+  height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+  vertical-align: middle;
+}
+.footer .container .bottom {
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer .container .bottom .CopyRight {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer .container .bottom .CopyRight a {
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer .container .bottom .Right {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+}
+.footer .container .bottom .Right .icon {
+  display: inline-block;
+}
+.footer .container .bottom .Right .icon img {
+  position: relative;
+  top: 5px;
+}
+.footer .container .bottom .Right .txt {
+  line-height: 34px;
+  padding-left: 10px;
+}

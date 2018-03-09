@@ -1,0 +1,30 @@
+.nav {
+  background: #0A0A1F;
+}
+.nav .wrap .menus {
+  width: 580px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(1).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(1):hover ~ .move {
+  left: 19.5px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(2).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(2):hover ~ .move {
+  left: 96px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(3).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(3):hover ~ .move {
+  left: 192px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(4).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(4):hover ~ .move {
+  left: 288px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(5).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(5):hover ~ .move {
+  left: 388px;
+}
+.nav .wrap .menus .menus-cell .menu:nth-child(6).active ~ .move,
+.nav .wrap .menus .menus-cell .menu:nth-child(6):hover ~ .move {
+  left: 488px;
+}

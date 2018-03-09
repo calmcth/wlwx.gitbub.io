@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代码示例-未来无线短信API</title>
+    
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="/sources/js/lib/require.js?t=1519633410329v1.0.0"></script>
+<script src="/sources/js/config.js?t=1519633410329v1.0.0"></script>
+<script src="/sources/js/app.js?t=1519633410329v1.0.0"></script>
+<link rel="shortcut icon" href="/sources/static/image/favicon.ico"/>
+<link rel="stylesheet" href="/sources/static/style/commonPage/reset.min.css?t=1519633410329v1.0.0">
+<link rel="stylesheet" href="/sources/static/style/commonPage/nav.css">
+<link rel="stylesheet" href="/sources/js/lib/animate.css?t=1519633410329v1.0.0">
+<link rel="stylesheet" href="/sources/static/style/commonPage/global.css">
+
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/support/supportNav.css">
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/support/support.css">
+    <link rel="stylesheet" type="text/css" href="/sources/static/style/support/demo.css">
+</head>
+<body>
+<div id="nav" class="nav">
+    <div class="wrap clearfix">
+        <div class="logo"><a href="/index.html"></a></div>
+        <div class="btn">
+            <div class="login"><a href="#">登录</a></div>
+            <div class="reg"><a href="#">注册</a></div>
+        </div>
+        <div class="menus">
+            <ul id="menus" class="menus-cell clearfix">
+                <li class="menu">
+                    <h3><a href="/index.html">首页</a></h3>
+                </li>
+                <li class="menu active">
+                    <h3><a href="/view/support/supportGuide.html">引导说明</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportInstruction.html">使用说明</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportSDK.html">SDK下载</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportDemo.html">代码示例</a></h3>
+                </li>
+                <li class="menu">
+                    <h3><a href="/view/support/supportReturn.html">返回值说明</a></h3>
+                </li>
+                <li class="move"></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="support_main_div">
+    <div class="support_content">
+        <div class="support_demo">
+    <div class="tabs_nav">
+        <div class="tabs_tab">Java</div>
+    </div>
+
+    <div class="code_div">
+        <pre class="code_view" title="HTML结构">
+            <h3 class="code_h3">Java(普通短信)</h3>
+            <ol class="code_ol">
+                <li>    public static void main(String[] args) {</li>
+                <li>        // [必填] 用户账号</li>
+                <li>    	String custCode = "xxxxxx";</li>
+                <li>        // [必填] 账号密码</li>
+                <li>    	String password = "xxxxxxxxx";</li>
+                <li>        // [必填] https://ip:port</li>
+                <li>    	String serviceBaseUrl = "https://ip:port";</li>
+                <li></li>
+                <li>    	/**</li>
+                <li>    	 * 1.通过SmsReq对象传参</li>
+                <li>    	 */</li>
+                <li></li>
+                <li>    	SmsReq smsReq = new SmsReq();</li>
+                <li>        // [选填] 业务标识，由贵司自定义32为数字透传至我司</li>
+                <li>    	smsReq.setUid("1123344567");</li>
+                <li>        // [必填] 用户账号</li>
+                <li>    	smsReq.setCust_code(custCode);</li>
+                <li>        // [必填] 短信内容</li>
+                <li>    	smsReq.setContent("短信内容");</li>
+                <li>        // [必填] 接收号码，同时发送给多个号码时,号码之间用英文半角逗号分隔(,)</li>
+                <li>    	smsReq.setDestMobiles("xxxxxxxxxx");</li>
+                <li>        // [选填] 状态报告需求与否，是 yes 否 no 默认yes</li>
+                <li>    	smsReq.setNeed_report("yes")</li>
+                <li>        // [选填] 长号码</li>
+                <li>    	smsReq.setSp_code("")</li>
+                <li>        // [选填] 信息格式，0：ASCII串；3：短信写卡操作；4：二进制信息；8：UCS2编码；默认8</li>
+                <li>    	smsReq.setMsgFmt("8")</li>
+                <li></li>
+                <li>    	SmsClient smsClient = new SmsClient();</li>
+                <li>    	ResultMsg resultMsg = smsClient.sendSms(smsReq, password, serviceBaseUrl);</li>
+                <li>    	if (resultMsg.isSuccess()) {</li>
+                <li>    		System.out.println(resultMsg.getData());</li>
+                <li>    	} else {</li>
+                <li>    		System.out.println(resultMsg.getCode());</li>
+                <li>    		System.out.println(resultMsg.getMsg());</li>
+                <li>    	}</li>
+                <li>    }</li>
+                <li>}</li>
+                <li></li>
+            </ol>
+        </pre>
+        <pre class="code_view" title="HTML结构">
+            <h3 class="code_h3">Java（变量短信）</h3>
+            <ol class="code_ol">
+                <li>public class SendVariantSms {</li>
+                <li>    public static void main(String[] args) {</li>
+                <li>        // [必填] 用户账号</li>
+                <li>    	String custCode = "xxxxxx";</li>
+                <li>        // [必填] 账号密码</li>
+                <li>    	String password = "xxxxxxxxx";</li>
+                <li>        // [必填] https://ip:port</li>
+                <li>    	String serviceBaseUrl = "https://ip:port";</li>
+                <li>    	/**</li>
+                <li>    	 * 1.通过SmsReq对象传参</li>
+                <li>    	 */</li>
+                <li>    	//变量参数</li>
+                <li>    	List&lt;VariantParams&gt; variantParamsList = new ArrayList&lt;VariantParams&gt;();</li>
+                <li>    	//对应内容中的${var1}和${var2}</li>
+                <li>    	String[] vars = {"福州","21"}; </li>
+                <li>    	//对应内容中的${var1}和${var2}</li>
+                <li>    	String[] vars1 = {"哈尔滨","-21"}; </li>
+                <li>    	//对应内容中的${var1}和${var2}</li>
+                <li>    	String[] vars2 = {"海南","30"}; </li>
+                <li></li>
+                <li>    	VariantParams variantParams = new VariantParams();</li>
+                <li>    	variantParams.setMobile("13489080110");</li>
+                <li>    	variantParams.setVars(vars);</li>
+                <li>    	variantParamsList.add(variantParams);</li>
+                <li></li>
+                <li>    	VariantParams variantParams1 = new VariantParams();</li>
+                <li>    	variantParams1.setMobile("13489080111");</li>
+                <li>    	variantParams1.setVars(vars1);</li>
+                <li>    	variantParamsList.add(variantParams1);</li>
+                <li></li>
+                <li>    	VariantParams variantParams2 = new VariantParams();</li>
+                <li>    	variantParams2.setMobile("13489080112");</li>
+                <li>    	variantParams2.setVars(vars2);</li>
+                <li>    	variantParamsList.add(variantParams2);</li>
+                <li>    	//变量短信请求
+                <li>    	VariantSmsReq variantSmsReq = new VariantSmsReq();</li>
+                <li>    	// [选填] 业务标识，由贵司自定义32为数字透传至我司</li>
+                <li>    	variantSmsReq.setUid("1123344567")</li>
+                <li>    	// [必填] 用户账号</li>
+                <li>    	variantSmsReq.setCust_code(custCode)</li>
+                <li>    	//[必填] 短信模板。其中的变量用“${vari}”来替代,i代表变量的序号（从0开始增长，每次增加1）。例如：“${var0}用户您好，今天${var1}的天气，晴，温度${var2}度，事宜外出。”，该短信中具有两个变量参数。编码为UTF-8格式。</li>
+                <li>    	variantSmsReq.setContent("${var1}天气${var2}度")</li>
+                <li>    	// [必填] 同时发送给多个号码时,号码之间用英文半角逗号分隔(,),，其中变量短信每一组为json格式，如: [{"mobile"："手机号码","var":["福州","30"]},{"mobile"："手机号码","var":["厦门","32"]}]	每组变量中第一个变量固定为目标手机号码，对应短信模板中的参数，var为变量个数要与内容中的(其中i变量系好，从1开始)个数匹配，以此类推。（请注意：变量中不要包含有逗号和竖线，否则发送的格式解析会有问题）</li>
+                <li>    	variantSmsReq.setParams(variantParamsList)</li>
+                <li>    	// [选填] 状态报告需求与否，是 yes 否 no 默认yes</li>
+                <li>    	variantSmsReq.setNeed_report("yes")</li>
+                <li>    	// [选填] 长号码</li>
+                <li>    	variantSmsReq.setSp_code("")</li>
+                <li>    	// [选填] 信息格式，0：ASCII串；3：短信写卡操作；4：二进制信息；8：UCS2编码；默认8</li>
+                <li>    	variantSmsReq.setMsgFmt("8")</li>
+                <li></li>
+                <li>    	SmsClient smsClient = new SmsClient();</li>
+                <li>    	ResultMsg resultMsg = smsClient.sendVariantSms(variantSmsReq, password, serviceBaseUrl);</li>
+                <li>    	if (resultMsg.isSuccess()) {</li>
+                <li>    		System.out.println(resultMsg.getData());</li>
+                <li>    	} else {</li>
+                <li>    		System.out.println(resultMsg.getCode());</li>
+                <li>    		System.out.println(resultMsg.getMsg());</li>
+                <li>    	}</li>
+                <li>    }</li>
+                <li>}</li>
+                <li></li>
+            </ol>
+        </pre>
+
+        <pre class="code_view" title="HTML结构">
+            <h3 class="code_h3">Java（获取上行记录）</h3>
+            <ol class="code_ol">
+                <li>public class GetMo {</li>
+                <li>    public static void main(String[] args) {</li>
+                <li>        // [必填] 用户账号</li>
+                <li>    	String custCode = "xxxxxx";</li>
+                <li>        // [必填] 账号密码</li>
+                <li>    	String password = "xxxxxxxxx";</li>
+                <li>        // [必填] https://ip:port</li>
+                <li>    	String serviceBaseUrl = "https://ip:port";</li>
+                <li></li>
+                <li>    	SmsClient smsClient = new SmsClient();</li>
+                <li>    	ResultMsg resultMsg = smsClient.GetMo(custCode, password, serviceBaseUrl);</li>
+                <li>    	if (resultMsg.isSuccess()) {</li>
+                <li>    		System.out.println(resultMsg.getData());</li>
+                <li>    	} else {</li>
+                <li>    		System.out.println(resultMsg.getCode());</li>
+                <li>    		System.out.println(resultMsg.getMsg());</li>
+                <li>    	}</li>
+                <li>    }</li>
+                <li>}</li>
+                <li></li>
+            </ol>
+        </pre>
+
+        <pre class="code_view" title="HTML结构">
+            <h3 class="code_h3">Java（获取状态报告）</h3>
+            <ol class="code_ol">
+                <li>public class GetReport {</li>
+                <li>    public static void main(String[] args) {</li>
+                <li>        // [必填] 用户账号</li>
+                <li>    	String custCode = "xxxxxx";</li>
+                <li>        // [必填] 账号密码</li>
+                <li>    	String password = "xxxxxxxxx";</li>
+                <li>        // [必填] https://ip:port</li>
+                <li>    	String serviceBaseUrl = "https://ip:port";</li>
+                <li></li>
+                <li>    	SmsClient smsClient = new SmsClient();</li>
+                <li>    	ResultMsg resultMsg = smsClient.getReport(custCode, password, serviceBaseUrl);</li>
+                <li>    	if (resultMsg.isSuccess()) {</li>
+                <li>    		System.out.println(resultMsg.getData());</li>
+                <li>    	} else {</li>
+                <li>    		System.out.println(resultMsg.getCode());</li>
+                <li>    		System.out.println(resultMsg.getMsg());</li>
+                <li>    	}</li>
+                <li>    }</li>
+                <li>}</li>
+                <li></li>
+            </ol>
+        </pre>
+
+        <pre class="code_view" title="HTML结构">
+            <h3 class="code_h3">Java（查询账户余额）</h3>
+            <ol class="code_ol">
+                <li>public class QueryAccount {</li>
+                <li>    public static void main(String[] args) {</li>
+                <li>        // [必填] 用户账号</li>
+                <li>    	String custCode = "xxxxxx";</li>
+                <li>        // [必填] 账号密码</li>
+                <li>    	String password = "xxxxxxxxx";</li>
+                <li>        // [必填] https://ip:port</li>
+                <li>    	String serviceBaseUrl = "https://ip:port";</li>
+                <li></li>
+                <li>    	SmsClient smsClient = new SmsClient();</li>
+                <li>    	ResultMsg resultMsg = smsClient.QueryAccount(custCode, password, serviceBaseUrl);</li>
+                <li>    	if (resultMsg.isSuccess()) {</li>
+                <li>    		System.out.println(resultMsg.getData());</li>
+                <li>    	} else {</li>
+                <li>    		System.out.println(resultMsg.getCode());</li>
+                <li>    		System.out.println(resultMsg.getMsg());</li>
+                <li>    	}</li>
+                <li>    }</li>
+                <li>}</li>
+                <li></li>
+            </ol>
+        </pre>
+
+        <pre class="code_view" title="HTML结构">
+            <h3 class="code_h3">Java（获取某手机号码黑名单类型列表）</h3>
+            <ol class="code_ol">
+                <li>public class GetBlackList {</li>
+                <li>    public static void main(String[] args) {</li>
+                <li>        // [必填] 用户账号</li>
+                <li>    	String custCode = "xxxxxx";</li>
+                <li>        // [必填] 账号密码</li>
+                <li>    	String password = "xxxxxxxxx";</li>
+                <li>        // [必填] https://ip:port</li>
+                <li>    	String serviceBaseUrl = "https://ip:port";</li>
+				<li>    	//手机号码</li>
+				<li>    	String mobile = "13489080110";</li>
+                <li></li>
+                <li>    	SmsClient smsClient = new SmsClient();</li>
+                <li>    	ResultMsg resultMsg = smsClient.GetBlackList(custCode, password, serviceBaseUrl, mobile);</li>
+                <li>    	if (resultMsg.isSuccess()) {</li>
+                <li>    		System.out.println(resultMsg.getData());</li>
+                <li>    	} else {</li>
+                <li>    		System.out.println(resultMsg.getCode());</li>
+                <li>    		System.out.println(resultMsg.getMsg());</li>
+                <li>    	}</li>
+                <li>    }</li>
+                <li>}</li>
+                <li></li>
+            </ol>
+        </pre>
+    </div>
+</div>
+    </div>
+</div>
+<script src="/sources/js/lib/jquery.min.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/controller/nav.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/common/SuperSlide.2.1.js?t=1516926812547v1.0.0"></script>
+<script src="/sources/js/common/daimabiji.js?t=1516926812547v1.0.0"></script>
+</body>
+</html>

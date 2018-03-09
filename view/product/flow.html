@@ -1,0 +1,30 @@
+<div id="flow">
+    <div class="flow_main_div">
+        <div class="flow_main_reason">
+            <h1 class="main_title">选择理由</h1>
+            <ul class="reason_ul">
+                <li v-for="item in reasonList" :key="item.name" class="reason_li">
+                    <div style="padding:52px 64px 24px 64px;">
+                        <img :src="'/sources/static/image/product/flow/'+item.img" >
+                    </div>
+                    <p class="reason_title">{{item.title}}</p>
+                    <p class="reason_subhead">{{item.subhead_one}}</p>
+                    <p class="reason_subhead">{{item.subhead_two}}</p>
+                    <p class="reason_subhead">{{item.subhead_three}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="flow_main_strategy">
+            <h1 class="main_title">服务策略</h1>
+            <ul class="strategy_ul">
+                <li v-for="item in strategy" :key="item.name" class="strategy_li">
+                    <div style="margin: 20px auto;">
+                        <img :src="'/sources/static/image/product/flow/'+item.img" >
+                    </div>
+                    <p class="reason_title">{{item.title}}</p>
+                    <p class="reason_subhead">{{item.subhead}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
